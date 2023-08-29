@@ -1,0 +1,1 @@
+fetch("https://api.weatherapi.com/v1/timezone.json?key=3d3fc5f176984a28b6121756232808&q=Delhi",{mode:"cors"}).then((function(o){return o.json()})).then((function(o){console.log(o.location.country)}));
