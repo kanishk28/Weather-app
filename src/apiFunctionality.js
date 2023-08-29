@@ -3,6 +3,10 @@ const submitBtn = document.querySelector('.submit-btn');
 const condition = document.querySelector('.condition');
 const conditionImg = document.querySelector('.condition-img');
 const placeName = document.querySelector('.place-name');
+const celsText = document.querySelector('.cels-h4');
+const feelsLike = document.querySelector('.feels-like');
+const windText = document.querySelector('.wind');
+const humidityText = document.querySelector('.humidity');
 
 
 export function searchLocation(){
@@ -22,6 +26,12 @@ export function searchLocation(){
             condition.textContent = response.current.condition.text;
             conditionImg.src = response.current.condition.icon;
             placeName.textContent = response.location.name + ', ' + response.location.country;
+            celsText.textContent = Math.round(response.current.temp_c) + '°c';
+            feelsLike.textContent = 'Feels Like: ' + Math.round(response.current.feelslike_c) + '°c';
+            windText.textContent = 'Wind: ' + Math.round(response.current.wind_mph) + ' MPH';
+            humidityText.textContent = 'Humidity: ' + Math.round(response.current.humidity) + '%';
+
+
 
 
 

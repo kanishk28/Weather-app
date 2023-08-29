@@ -38,7 +38,7 @@ body, html{
 #content{
     display: flex;
     padding-top: 30px;
-    width: 20vw;
+    width: 100%;
     height: 100vh;
     flex-direction: column;
     align-items: center;
@@ -48,7 +48,8 @@ body, html{
 /* condition text */
 .condition-div{
     display: flex;
-    align-self: center;
+    justify-content: center;
+    width: 100%;
     height: 5vh;
 }
 
@@ -61,7 +62,7 @@ body, html{
 .conditionimg-div{
     display: flex;
     justify-content: center;
-    width: 20vw;
+    width: 100%;
     height: 10vh;
 
 }
@@ -76,11 +77,12 @@ body, html{
 .place-div{
 display: flex;
 flex-direction: column;
-align-self: center;
+align-items: center;
+width: 100%;
 }
 .place-name{
     font-size: 2.2rem;
-    height: 2vh;
+    height: fit-content;
 }
 
 
@@ -90,7 +92,7 @@ align-self: center;
 .both-info{
     display: flex;
     flex-direction: row;
-    width: 20vw;
+    width: 100%;
 }
 
 /* celsius styling */
@@ -99,7 +101,7 @@ align-self: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50vw;
+    width: 50%;
 }
 .cels-h4{
     font-size: 3rem;
@@ -111,8 +113,8 @@ align-self: center;
 .cels-weather-details{
     display: flex;
     flex-direction: column;
-    width: 50vw;
-    justify-content: center;
+    width: 50%;
+    justify-content: end;
     align-items: center;
     border-left: 2px solid green;
 }
@@ -120,20 +122,17 @@ align-self: center;
 /* feels like styling */
 .feels-like{
     display: flex;
-    justify-content: end;
     width: 10vw;
 }
 
-
+/* wind text styling  */
 .wind{
     display: flex;
-    justify-content: end;
     width: 10vw;
 }
 
-
+/* humidity text styling */
 .humidity{
     display: flex;
-    justify-content: end;
     width: 10vw;
 }
