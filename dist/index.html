@@ -4,10 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Gluten:wght@100;200;300;600;900&display=swap" rel="stylesheet">
+    <title>Weather App</title>
 </head>
 <body>
-    
+    <div id="container">
+        <div class="search-div">
+            <input id='search-location' placeholder="Enter City Name"><button class="submit-btn">Search Location</button>
+        </div>
+        <div id="content">
+            <div class="condition-div"><p class="condition">Clear</p></div>
+            <div class="conditionimg-div"><img class="condition-img"></div>
+              <div class="place-div"><h4 class="place-name">New Delhi, India</h4></div>
+              <div class="both-info">
+
+                  <div class="cels-div"><h4 class="cels-h4">71°C</h4></div>
+                  <div class="cels-weather-details">
+                      <p class="feels-like">Feels like: 71°C</p>
+                      <p class="wind">Wind: 8 MPH</p>
+                      <p class="humidity">Humidity: 57%</p>
+                    </div>
+                </div>
+            </div>
+        
+
+    </div>
 
 <script src="main.js"></script>
 </body>
